@@ -45,11 +45,10 @@
     border-radius: 10px;
     overflow: hidden;
 }
-
 .nft__img {
     max-width: 100%;
-    
 }
+
 .main__nft:hover {
     background-color: var(--cyan);
     background-image: url(images/icon-view.svg);
@@ -58,9 +57,10 @@
 }
 .nft__img:hover {
     mix-blend-mode: multiply;
-    opacity: 0.5;
+    opacity: .4;
     cursor: pointer;
 }
+
 .main__information {
     margin-left: 25px;
     margin-right: 25px;
@@ -75,6 +75,7 @@
 .information__title:hover{
     color: var(--cyan);
     cursor: pointer;
+    transition-duration: 1s;
 }
 .information__description {
     color: var(--soft-blue);
@@ -138,6 +139,8 @@
 }
 .owner__span:hover {
     color: var(--cyan);
+    transition-duration: 1s;
+    cursor: pointer;
 }
 .attribution { 
     font-size: 11px; 
@@ -146,4 +149,11 @@
 }
 .attribution__a { 
     color: var(--cyan); 
+}
+
+@media only screen and (max-width: 375px) {
+    .main {
+        margin-top: 30px;
+        width: 320px;
+    }
 }
